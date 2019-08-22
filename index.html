@@ -11,5 +11,14 @@
     given as input to the CNN. Spectrogram is a time-frequency representation of a signal. In spectrogram, Fourier 
     transform of a short-time windowed signal is taken with some  overlapping (typically around 10 ms). However, 
     spectrgrams are unable to capture time and frequency resolution simultaneously.</p>
+  
+  <p>In this work, we explore the SFF spectrogram as an alternative representation of speech for SER. We have modified 
+  the SFF spectrogram by taking the average of the amplitudes of all the samples between two successive glottal 
+  closure instants (GCI) locations. The duration between two successive GCI locations gives the pitch, 
+  motivating us to name the modified SFF spectrogram as "**Pitch-synchronous SFF spectrogram**".</p>
+  
+  <img src="/images/STFT_Anger.jpg" alt="Italian Trulli" style="width:500px;height:600px;">
+  
+  
 </body>
 </html> 
