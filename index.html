@@ -26,6 +26,14 @@ frames, does not hold good practically. The proposed approach logically decompos
 tween two successive GCI locations. As a result, the unique pitch pattern of every emotion is reflected well
 in the pitch-synchronous SFF spectrogram. </p>
   
+  <p>The proposed pitch-synchronous SFF spectrogram produced accuracy values of 63.95% (unweighted) and 70.4% (weighted) on the IEMOCAP dataset. These correspond to an
+  improvement of +7.35% (unweighted) and +4.3% (weighted) over state-of-the-art result on the STFT sepctrogram using
+  CNN. Specially, the proposed method recognized 22.7% of the happy emotion samples correctly, whereas this number was 0%
+  for state-of-the-art results. These results also promise a much wider use of the proposed pitch-synchronous SFF spectrogram
+  for other speech-based applications.</p>
+  
+  Here are some examples, where our proposed method correctly classified 'happy' emotion, whereas spectrogram failed.
+  
   <p> </p>
   <figure>
     <figcaption>Happy Emotion:</figcaption>
@@ -46,6 +54,8 @@ in the pitch-synchronous SFF spectrogram. </p>
             <code>audio</code> element.
     </audio>
   </figure>
+  
+  Here are some examples, where our proposed method as well as spectrogram failed.
   
   
 </body>
