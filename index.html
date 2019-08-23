@@ -7,8 +7,8 @@
     using the speech signal. SER has a lot of applications in real life. It can be beneficial for applications 
     where natural human-computer interaction is required.</p>
 
-  <p> In this work we have used Convolutional neural network for classifying emotions. Generally, spectrograms are 
-    given as input to the CNN. Spectrogram is a time-frequency representation of a signal. In spectrogram, Fourier 
+  <p> In this work we have used Convolutional neural network for classifying emotions of IEMOCAP dataset. Only 4 emotions 
+    are used(Anger, Happy, Neutral and Sad). Generally, spectrograms are given as input to the CNN. Spectrogram is a time-frequency representation of a signal. In spectrogram, Fourier 
     transform of a short-time windowed signal is taken with some  overlapping (typically around 10 ms). However, 
     spectrgrams are unable to capture time and frequency resolution simultaneously.</p>
   
@@ -20,16 +20,23 @@
   <img src="STFT_Anger.jpg" alt="Italian Trulli" style="width:500px;height:400px;">
   <embed src="SFFAnger.pdf" width="500px" height="400px" />
   
+  <p>As can be seen in the above figures that pitch-synchronous SFF has better time as well as frequency resolution as
+compared to spectrogram. In spectrogram fixed frame os 10-40ms is taken, where the assumption is that the emotional speech is stationary over fixed-size
+frames, does not hold good practically. The proposed approach logically decomposes frames based on GCI locations; an emotional speech is near stationary be-
+tween two successive GCI locations. As a result, the unique pitch pattern of every emotion is reflected well
+in the pitch-synchronous SFF spectrogram. </p>
+  
   <p>The proposed pitch-synchronous SFF spectrogram produced accuracy values of 63.95% (unweighted) and 70.4% (weighted) on the IEMOCAP dataset. These correspond to an
   improvement of +7.35% (unweighted) and +4.3% (weighted) over state-of-the-art result on the STFT sepctrogram using
   CNN. Specially, the proposed method recognized 22.7% of the happy emotion samples correctly, whereas this number was 0%
   for state-of-the-art results. These results also promise a much wider use of the proposed pitch-synchronous SFF spectrogram
   for other speech-based applications.</p>
   
-  Here are some examples, where our proposed method correctly classified 'happy' emotion.
+  Here are some examples, where our proposed method correctly classified 'happy' emotion, whereas spectrogram failed.
   
+  <p> </p>
   <figure>
-    <figcaption>Listen to the T-Rex:</figcaption>
+    <figcaption>Happy Emotion:</figcaption>
     <audio
         controls
         src="HappySes02F_impro03_M023.wav">
@@ -37,6 +44,18 @@
             <code>audio</code> element.
     </audio>
   </figure>
+  
+  <figure>
+    <figcaption>Happy Emotion:</figcaption>
+    <audio
+        controls
+        src="HappySes05F_impro08_M028.wav">
+            Your browser does not support the
+            <code>audio</code> element.
+    </audio>
+  </figure>
+  
+  Here are some examples, where our proposed method as well as spectrogram failed.
   
   
 </body>
