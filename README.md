@@ -23,5 +23,10 @@ for state-of-the-art results. These results also promise a much
 wider use of the proposed pitch-synchronous SFF spectrogram
 for other speech-based applications.
 
+![Spectrogram versus Proposed Method](Pitch_synchronousSFF_Spectrogram.jpg)
+
+[Look here for more details on comparisons of these two methos](https://shruti1229.github.io/SpeechEmotionRecognition/)
+
+[Visit our paper here](https://arxiv.org/abs/1908.03054)
 
 
